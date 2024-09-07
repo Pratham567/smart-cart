@@ -1,9 +1,9 @@
 import './Footer.css';
 
-import footer_logo from '../Assets/footer_logo_big.png';
-import instagram_icon from '../Assets/instagram_icon.png';
-import pinterest_icon from '../Assets/pinterest_icon.png';
-import whatsapp_icon from '../Assets/whatsapp_icon.png';
+import footer_logo from '../Assets/footer/footer_logo_big.png';
+import instagram_icon from '../Assets/footer/instagram_icon.png';
+import pinterest_icon from '../Assets/footer/pinterest_icon.png';
+import whatsapp_icon from '../Assets/footer/whatsapp_icon.png';
 
 const Footer = () => {
     return (
