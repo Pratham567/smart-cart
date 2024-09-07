@@ -1,10 +1,10 @@
 import Navbar from "./Components/Navbar/Navbar";
-import Shop from "./Components/Pages/Shop";
-import Cart from "./Components/Pages/Cart";
-import LoginSignup from "./Components/Pages/LoginSignup";
-import ShopCategory from "./Components/Pages/ShopCategory";
-import Product from "./Components/Pages/Product";
-import Contact from "./Components/Pages/Contact";
+import Shop from "./Pages/Shop";
+import Cart from "./Pages/Cart";
+import LoginSignup from "./Pages/LoginSignup";
+import ShopCategory from "./Pages/ShopCategory";
+import Product from "./Pages/Product";
+import Contact from "./Pages/Contact";
 import Footer from "./Components/Footer/Footer";
 
 import './index.css';
