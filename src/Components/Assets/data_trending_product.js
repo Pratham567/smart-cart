@@ -10,7 +10,7 @@ let data_product_trending_women = [
     description: "This is a description of the product. It is a very good product. You should buy it.",
     image: p1_img,
     new_cost: 750.00,
-    old_cost: 680.50,
+    old_cost: 680.50
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ let data_product_trending_women = [
     description: "This is a description of the product. It is a very good product. You should buy it.",
     image: p2_img,
     new_cost: 985.00,
-    old_cost: 820.50,
+    old_cost: 820.50
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ let data_product_trending_women = [
     description: "This is a description of the product. It is a very good product. You should buy it.",
     image: p3_img,
     new_cost: 790.00,
-    old_cost: 800.50,
+    old_cost: 800.50
   },
   {
     id: 4,
@@ -34,8 +34,10 @@ let data_product_trending_women = [
     description: "This is a description of the product. It is a very good product. You should buy it.",
     image: p4_img,
     new_cost: 600.00,
-    old_cost: 450.00,
-  },
+    old_cost: 450.00
+  }
 ];
+
+// HW: add an object for each category: men, and kids as well
 
 export { data_product_trending_women };
