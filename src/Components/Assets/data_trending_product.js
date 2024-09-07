@@ -1,7 +1,7 @@
-import p1_img from './w_trending_p_1.png'
-import p2_img from './w_trending_p_2.png'
-import p3_img from './w_trending_p_3.png'
-import p4_img from './w_trending_p_4.png'
+import p1_img from './trending_women_products/w_trending_p_1.png'
+import p2_img from './trending_women_products/w_trending_p_2.png'
+import p3_img from './trending_women_products/w_trending_p_3.png'
+import p4_img from './trending_women_products/w_trending_p_4.png'
 
 let data_product_trending_women = [
   {
