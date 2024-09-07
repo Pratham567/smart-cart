@@ -5,6 +5,7 @@ import LoginSignup from "./Components/Pages/LoginSignup";
 import ShopCategory from "./Components/Pages/ShopCategory";
 import Product from "./Components/Pages/Product";
 import Contact from "./Components/Pages/Contact";
+import Footer from "./Components/Footer/Footer";
 
 import './index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -25,10 +26,12 @@ function App() {
           <Route path="/login" element={<LoginSignup />} />
         </Routes>
 
+        <div className="content" >
+          <h3>Welcome to the smartcart</h3>
+        </div>
+
+        <Footer />
       </Router>
-      <div className="content" >
-        <h3>Welcome to the smartcart</h3>
-      </div>
     </div>
   );
 }
