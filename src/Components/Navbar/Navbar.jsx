@@ -1,9 +1,14 @@
 import './Navbar.css';
 
+import { useState } from 'react';
+
 import logo from '../Assets/logo.png';
 import cart_icon from '../Assets/cart_icon.png';
 
 const Navbar = () => {
+
+    const [menu, setMenu] = useState("shopAll");
+
     return (
         <div className="navbar">
             <div className="logo-title">
@@ -11,11 +16,11 @@ const Navbar = () => {
                 <h1 className="title">SmartCart</h1>
             </div>
             <ul>
-                <li>Shop All</li>
-                <li>Shop Men</li>
-                <li>Shop Women</li>
-                <li>Shop Kids</li>
-                <li>Contact</li>
+                <li onClick={() => {setMenu("shopAll")}}>Shop All {menu==="shopAll" ? <hr /> : <></> } </li>
+                <li onClick={() => {setMenu("shopmen")}}>Shop Men {menu==="shopmen" ? <hr /> : <></> } </li>
+                <li onClick={() => {setMenu("shopWomen")}}>Shop Women {menu==="shopWomen" ? <hr /> : <></> } </li>
+                <li onClick={() => {setMenu("shopKids")}}>Shop Kids {menu==="shopKids" ? <hr /> : <></> } </li>
+                <li onClick={() => {setMenu("contact")}}>Contact {menu==="contact" ? <hr /> : <></> } </li>
             </ul>
             <div className="actions">
                 <button class="sign-in-button">Sign In</button>
