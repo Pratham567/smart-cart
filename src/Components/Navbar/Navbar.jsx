@@ -18,10 +18,9 @@ const Navbar = () => {
                 <li>Contact</li>
             </ul>
             <div className="actions">
-                <button>
-                    Sign In
-                </button>
+                <button class="sign-in-button">Sign In</button>
                 <img src={cart_icon} alt="cart_icon" className="cart_icon" />
+                <div className="nav-cart-count">0</div>
             </div>
         </div>
     );
