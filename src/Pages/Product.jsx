@@ -3,17 +3,17 @@ import { ShopContext } from '../Context/ShopContext';
 import { useContext } from 'react';
 
 import Breadcrum from "../Components/Breadcrum/Breadcrum";
+import ProductDisplay from "../Components/ProductDisplay/ProductDisplay";
 
 const Product = () => {
     const { id } = useParams();
     const all_products = useContext(ShopContext);
-    const product = all_products.find(product => product.id == id);
+    const product = all_products.find(product => product.id === Number(id));
     console.log(product);
     return (
         <div>
-            <h1>Product Page: {id}</h1>
-
             <Breadcrum product={product} />
+            <ProductDisplay product={product} />
         </div>
     );
 }

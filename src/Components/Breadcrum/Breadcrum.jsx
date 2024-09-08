@@ -6,7 +6,7 @@ const Breadcrum = ({ product }) => {
         <div className="breadcrum">
             <a href="/">HOME</a>
             <img src={arrow_icon} alt="arrow" />
-            <a href={`/${product.category.toLowerCase()}`}>SHOP {product.category.toUpperCase()}</a>
+            <a href={`/${product.category.toLowerCase()}`}> {product.category.toUpperCase()}</a>
             <img src={arrow_icon} alt="arrow" />
             <span>{product.name}</span>
         </div>
