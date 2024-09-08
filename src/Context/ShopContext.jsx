@@ -1,16 +1,19 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import all_products from "../Components/Assets/all_products";
 
 export const ShopContext = createContext(null);
 
 const getDefaultCart = () => {
-    // initialize the cart object with an empty object, as the cart is empty initially
-    let cart = {};
-    return cart;
+    const cart = localStorage.getItem('cart');
+    return cart ? JSON.parse(cart) : {};
 }
 
 const ShopContextProvider = ({ children }) => {
     const [cart, setCart] = useState(getDefaultCart());
+
+    useEffect(() => {
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }, [cart]);
 
     const addProductToCart = (productId) => {
         setCart((prevCart) => {
