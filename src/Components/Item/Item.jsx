@@ -1,9 +1,11 @@
 import './Item.css';
+import { Link } from 'react-router-dom';
 
 const Item = ({ itemInfo }) => {
 
     return (
         <div className="item">
+            <Link to={`/product/${itemInfo.id}`}>
             <img src={itemInfo.image} alt={itemInfo.name} className="item-image" />
             <h3>{itemInfo.name}</h3>
             <div className="item-cost">
@@ -14,6 +16,7 @@ const Item = ({ itemInfo }) => {
                     ₹{itemInfo.old_cost}
                 </div>
             </div>
+            </Link>
         </div>
     );
 }
