@@ -5,6 +5,7 @@ import { useContext } from 'react';
 import Breadcrum from "../Components/Breadcrum/Breadcrum";
 import ProductDisplay from "../Components/ProductDisplay/ProductDisplay";
 import DescriptionBox from "../Components/DescriptionBox/DescriptionBox";
+import RelatedProducts from "../Components/RelatedProducts/RelatedProducts";
 
 const Product = () => {
     const { id } = useParams();
@@ -16,6 +17,8 @@ const Product = () => {
             <Breadcrum product={product} />
             <ProductDisplay product={product} />
             <DescriptionBox />
+            <RelatedProducts category={product.category}/>
+
         </div>
     );
 }
