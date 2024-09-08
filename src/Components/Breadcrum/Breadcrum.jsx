@@ -1,12 +1,13 @@
 import './Breadcrum.css';
+import { Link } from 'react-router-dom';
 import arrow_icon from '../Assets/breadcrum/breadcrum_arrow.png';
 
 const Breadcrum = ({ product }) => {
     return (
         <div className="breadcrum">
-            <a href="/">HOME</a>
+            <Link to="/">HOME</Link>
             <img src={arrow_icon} alt="arrow" />
-            <a href={`/${product.category.toLowerCase()}`}> {product.category.toUpperCase()}</a>
+            <Link to={`/${product.category.toLowerCase()}`}>{product.category.toUpperCase()}</Link>
             <img src={arrow_icon} alt="arrow" />
             <span>{product.name}</span>
         </div>
