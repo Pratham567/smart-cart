@@ -3,9 +3,16 @@ import { Link } from 'react-router-dom';
 
 const Item = ({ itemInfo }) => {
 
+    const handleClick = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <div className="item">
-            <Link to={`/product/${itemInfo.id}`}>
+            <Link to={`/product/${itemInfo.id}`} onClick={handleClick}>
             <img src={itemInfo.image} alt={itemInfo.name} className="item-image" />
             <h3>{itemInfo.name}</h3>
             <div className="item-cost">
